@@ -1,0 +1,91 @@
+				body{
+					width:100%;
+					height:100%;
+					background:url('../images/introGraphic.jpg') no-repeat center left fixed;
+
+	  
+        	 	background-repeat:no-repeat;
+    			background-size:100% 100%;
+					
+				}
+				header{
+					width:100%;
+					height:30px;
+					background-color:black;
+					color:white;
+					text-align:center;
+				}
+				.mainBody{
+					width:100%;
+					height:100%;
+					
+				}
+				#contentBox{
+					width:700px;
+					height:500px;
+					background-color:none;
+					border-radius:10px;
+					margin:30px auto 0 auto;
+					text-align:center;
+				}
+				#titleGraphic{
+					margin:0px auto 0px auto;
+					background-image:url('../images/twinPeaksLogo.png');
+					background-repeat: no-repeat;
+					width:508px;
+					height:120px;
+					opacity:0;
+
+				}
+				#triviaGraphic{
+					margin:0 auto 0 auto;
+					background-image:url('../images/trivia.png');
+					background-repeat: no-repeat;
+					width:284px;
+					height:84px;
+					border-top:1px solid #2ed30d;
+					opacity:0;
+					
+
+
+				}
+				.startGameText{
+					color:white;
+					width:70%;
+					margin: 0 auto 0 auto;
+					padding-top:30px;
+					opacity:0;
+				}
+				#btnNewGame{
+					opacity:0;
+				}
+				.questionText{
+					color:white;
+					width:70%;
+					margin: 0 auto 0 auto;
+					padding-top:30px;
+				}
+				.questionChoice{
+					color:white;
+					width:70%;
+					height:15px;
+					
+					margin: 10px auto 0 auto;
+					cursor:pointer;
+					
+				}
+				footer{
+					width:100%;
+					height:30px;
+					background-color:black;
+					color:white;
+					text-align: center;
+					position:absolute;
+					bottom:0px;
+				}
+				.hcPhoto{
+
+				}
+				.choiceHoverClass{
+				background-color: blue;
+				}
