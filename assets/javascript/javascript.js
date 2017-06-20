@@ -357,7 +357,7 @@ $('#contentBox').on("click", "#btnStartOver",function(){
 
 
 					$('#contentBox').append('<button id = "btnStartOver">New Game</button>')
-					$('body').css({'background':'url("assets/images/creditsBackdropBlurred.jpg")no-repeat center left fixed','background-repeat':'no-repeat','background-size':'100% 100%'});
+					$('body').css({'background':'url("assets/images/victoryScreen.jpg")no-repeat center left fixed','background-repeat':'no-repeat','background-size':'100% 100%'});
 					defeatMusic.play();
 				}
 		}
