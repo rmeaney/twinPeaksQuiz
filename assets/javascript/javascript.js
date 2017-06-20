@@ -22,7 +22,10 @@
 				correctSound.src = "assets/audio/correctChoice.mp3";
 
 				var wrongSound = new Audio();
-				wrongSound.src = "assets/audio/wrongChoice.mp3";
+				wrongSound.src =  "assets/audio/wrongChoice.mp3";
+
+				var letsRock = new Audio();
+				letsRock.src = "assets/audio/letsRock.mp3";
 
 		$(document).ready(function(){
 			
@@ -142,6 +145,7 @@
 				$('#triviaGraphic').remove();
 				$('.startGameText').remove();
 				$('#btnNewGame').remove();
+				letsRock.play();
 
 				questionsRemaining =questionList.length;
 				generateQuestion();
@@ -254,12 +258,14 @@
 			});
 
 $('#contentBox').on("click", "#btnStartOver",function(){
+				letsRock.play();
 				console.log('hey you pressed me!')
 				$('.resultText').remove();
 				$('.resultHeader').remove();
 				$('.victoryText').remove();
 				$('.victoryHeader').remove();
 				$(this).remove();
+
 				questionList = [{
 				question: "What cryptic message about 'good news' does The Arm tell Cooper, when he first enters the Black Lodge",
 					a: "One day my log will have something to say about this.",
