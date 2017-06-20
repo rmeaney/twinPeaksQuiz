@@ -145,6 +145,7 @@
 
 				questionsRemaining =questionList.length;
 				generateQuestion();
+				introMusic.pause();
 			});
 
 			
@@ -336,8 +337,10 @@ $('#contentBox').on("click", "#btnStartOver",function(){
 				questionsRemaining =questionList.length;
 
 				generateQuestion();
-				victoryMusic.stop();
-				defeatMusic.stop();
+				victoryMusic.pause();
+				victoryMusic.currentTime = 0;
+				defeatMusic.pause();
+				defeatMusic.currentTime = 0;
 			});
 			
 		function endGameConditions(){
@@ -348,6 +351,7 @@ $('#contentBox').on("click", "#btnStartOver",function(){
 
 					$('#contentBox').append('<button id = "btnStartOver">New Game</button>')
 					$('body').css({'background':'url("assets/images/victoryScreen.jpg")no-repeat center left fixed','background-repeat':'no-repeat','background-size':'100% 100%'});
+					
 					victoryMusic.play();
 
 				}else{
@@ -358,6 +362,7 @@ $('#contentBox').on("click", "#btnStartOver",function(){
 
 					$('#contentBox').append('<button id = "btnStartOver">New Game</button>')
 					$('body').css({'background':'url("assets/images/creditsBackDropBlurred.jpg")no-repeat center left fixed','background-repeat':'no-repeat','background-size':'100% 100%'});
+					
 					defeatMusic.play();
 				}
 		}
