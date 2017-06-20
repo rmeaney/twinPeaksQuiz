@@ -255,6 +255,9 @@
 $('#contentBox').on("click", "#btnStartOver",function(){
 				console.log('hey you pressed me!')
 				$('.resultText').remove();
+				$('.resultHeader').remove();
+				$('.victoryText').remove();
+				$('.victoryHeader').remove();
 				$(this).remove();
 				questionList = [{
 				question: "What cryptic message about 'good news' does The Arm tell Cooper, when he first enters the Black Lodge",
@@ -339,15 +342,20 @@ $('#contentBox').on("click", "#btnStartOver",function(){
 			
 		function endGameConditions(){
 			if(right > wrong){
-				$('#contentBox').append('<p class = "resultText"> Congratulations, you have won! </p>');
-					
+				$('#contentBox').append('<p class = "victoryHeader"> Congratulations, you have won! </p>');
+					$('#contentBox').append('<p class ="victoryText">' + "You got " + right + " correct, and " + wrong + " wrong"+'<p>');
+					$('#contentBox').append('<p class ="victoryText">Great Job! Click Below to try again</p>');
+
 					$('#contentBox').append('<button id = "btnStartOver">New Game</button>')
 					$('body').css({'background':'url("assets/images/victoryScreen.jpg")no-repeat center left fixed','background-repeat':'no-repeat','background-size':'100% 100%'});
 					victoryMusic.play();
 
 				}else{
-					$('#contentBox').append('<p class = "resultText"> Sorry, you have failed. </p>');
-					
+					$('#contentBox').append('<p class = "resultHeader"> You have failed. </p>');
+					$('#contentBox').append('<p class ="resultText">' + "You got " + right + " correct, and " + wrong + " wrong"+'<p>');
+					$('#contentBox').append('<p class ="resultText">Click Below to try again</p>');
+
+
 					$('#contentBox').append('<button id = "btnStartOver">New Game</button>')
 					$('body').css({'background':'url("assets/images/creditsBackdropBlurred.jpg")no-repeat center left fixed','background-repeat':'no-repeat','background-size':'100% 100%'});
 					defeatMusic.play();

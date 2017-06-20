@@ -56,11 +56,43 @@
 					padding-top:30px;
 					opacity:0;
 				}
+				.questionText{
+					font-weight:bold;
+					font-size:16pt;
+					color:white;
+					font-family:arial;
+					text-shadow:2px 2px #000000;
+				}
+				.resultHeader{
+					font-weight:bold;
+					font-size:16pt;
+					color:white;
+					font-family:arial;
+					text-shadow:2px 2px #000000;
+				}
 				.resultText{
 					color:white;
 					font-style:arial;
-					text-shadow:#ff0000;
+					text-shadow: 2px 2px #000000;
+					padding-top:20px;
+					padding-bottom:20px;
 				}
+				.victoryHeader{
+					font-weight:bold;
+					font-size:16pt;
+					color:white;
+					font-family:arial;
+					text-shadow:2px 2px #000000;
+				}
+				.victoryText{
+					color:white;
+					font-style:arial;
+					text-shadow:2px 2px #000000;
+					padding-top:20px;
+					padding-bottom:20px;
+				}
+
+				
 				#btnNewGame{
 					opacity:0;
 				}
@@ -68,29 +100,56 @@
 					color:white;
 					width:70%;
 					margin: 0 auto 0 auto;
-					padding-top:30px;
+					
+					padding-top:20px;
+
+					font-weight:bold;
+					font-size:16pt;
+				
+					font-family:arial;
+					text-shadow:2px 2px #000000;
 				}
 				.questionChoice{
 					color:white;
 					width:70%;
-					height:15px;
 					
-					margin: 10px auto 0 auto;
+					font-size:16px;
+					margin: 20px auto 0 auto;
 					cursor:pointer;
+
+					
 					
 				}
 				footer{
 					width:100%;
-					height:30px;
+					height:40px;
 					background-color:black;
 					color:white;
 					text-align: center;
 					position:absolute;
 					bottom:0px;
+					padding:0px;
 				}
 				.hcPhoto{
-
+					background-image:url('../images/sheryl-lee-twin-peaks.jpg');
+					background-color:white;
+					width:400px;
+					height:452px;
+					padding:10px;
 				}
 				.choiceHoverClass{
-				background-color: blue;
+					background-color: #2ed30d;
+					color:#D30D9F;
+					
+
+				}
+				footer a{
+					color:#2ed30d;
+				}
+				footer a:hover{
+					color:white;
+				}
+				button{
+					position:relative;
+					margin-top: 20px;
 				}
