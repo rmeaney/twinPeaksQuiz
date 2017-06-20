@@ -56,6 +56,11 @@
 					padding-top:30px;
 					opacity:0;
 				}
+				.resultText{
+					color:white;
+					font-style:arial;
+					text-shadow:#ff0000;
+				}
 				#btnNewGame{
 					opacity:0;
 				}
