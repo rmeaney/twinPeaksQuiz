@@ -95,7 +95,42 @@
 				
 				#btnNewGame{
 					opacity:0;
+					width:100px;
+					height:50px;
+					background-image:url('../images/newGameBtn_Normal-01.png');
+					background-repeat:no-repeat;
+					background-color: Transparent;
+	  				border:none;
+	  				cursor:pointer;
 				}
+				#btnNewGame:hover{
+					opacity:0;
+					width:100px;
+					height:50px;
+					background-image:url('../images/newGameBtn_Over-01.png');
+					background-repeat:no-repeat;
+					background-color: Transparent;
+	  				border:none;
+				}
+				#btnStartOver{
+					width:100px;
+					height:50px;
+					background-image:url('../images/newGameBtn_Normal-01.png');
+					background-repeat:no-repeat;
+					background-color: Transparent;
+	  				border:none;
+	  				cursor:pointer;
+				}
+				#btnStartOver:hover{
+					width:100px;
+					height:50px;
+					background-image:url('../images/newGameBtn_Over-01.png');
+					background-repeat:no-repeat;
+					background-color: Transparent;
+	  				border:none;
+	  				cursor:pointer
+				}
+
 				.questionText{
 					color:white;
 					width:70%;
@@ -115,6 +150,8 @@
 					
 					font-size:16px;
 					margin: 20px auto 0 auto;
+					border-radius:4px;
+					border:2px solid transparent;
 					cursor:pointer;
 
 					
@@ -136,12 +173,36 @@
 					width:400px;
 					height:452px;
 					padding:10px;
+					
 				}
 				.choiceHoverClass{
 					background-color: #2ed30d;
 					color:#D30D9F;
+					border-radius:4px;
+					border:2px solid #D30D9F;
 					
 
+				}
+
+				#nextQuestionBTN{
+					width:75px;
+					height:37px;
+					background-image:url('../images/nextButton_Normal-01.png');
+					background-repeat:no-repeat;
+					background-color: Transparent;
+	  				border:none;
+	  				cursor:pointer;
+	  
+
+				}
+				#nextQuestionBTN:hover{
+					width:75px;
+					height:37px;
+					background-image:url('../images/nextButton_Over-01.png');
+					background-repeat: no-repeat;
+					background-color: Transparent;
+	  				border:none;
+	  				cursor:pointer;
 				}
 				footer a{
 					color:#2ed30d;

@@ -182,7 +182,7 @@
 				$('#contentBox').append('<p class = "resultText">CORRECT!</p>');
 				if(questionList.length > 0){
 				$('#contentBox').append('<p class = "resultText">' + 'You have gotten ' + right + " correct, "  + "and " + wrong + " incorrect." + '</p>');
-				$('#contentBox').append('<button id = "nextQuestionBTN">Next Question</button>');
+				$('#contentBox').append('<button id = "nextQuestionBTN" class ="nextQuestionBTNClass"></button>');
 				}else{
 					endGameConditions();
 
@@ -199,7 +199,7 @@
 				$('#contentBox').append('<p class = "resultText">Sorry, that is not correct!</p>');
 				if(questionList.length > 0){
 				$('#contentBox').append('<p class = "resultText">' + 'You have gotten ' + right + " correct, "  + "and " + wrong + " incorrect." + '</p>');
-				$('#contentBox').append('<button id = "nextQuestionBTN">Next Question</p>');
+				$('#contentBox').append('<button id = "nextQuestionBTN" class = "nextQuestionBTNClass"></button>');
 				}else{
 					endGameConditions();
 				}
@@ -216,7 +216,7 @@
 				$('#contentBox').append('<p class = "resultText">Sorry, You ran out of time!</p>');
 				if(questionList.length > 0){
 				$('#contentBox').append('<p class = "resultText">' + 'You have gotten ' + right + " correct, "  + "and " + wrong + " incorrect." + '</p>');
-				$('#contentBox').append('<button id = "nextQuestionBTN">Next Question</p>');
+				$('#contentBox').append('<button id = "nextQuestionBTN" class ="nextQuestionBTNClass"></button>');
 				}else{
 					endGameConditions();
 				}
@@ -355,7 +355,7 @@ $('#contentBox').on("click", "#btnStartOver",function(){
 					$('#contentBox').append('<p class ="victoryText">' + "You got " + right + " correct, and " + wrong + " wrong"+'<p>');
 					$('#contentBox').append('<p class ="victoryText">Great Job! Click Below to try again</p>');
 
-					$('#contentBox').append('<button id = "btnStartOver">New Game</button>')
+					$('#contentBox').append('<button id = "btnStartOver"></button>')
 					$('body').css({'background':'url("assets/images/victoryScreen.jpg")no-repeat center left fixed','background-repeat':'no-repeat','background-size':'100% 100%'});
 					
 					victoryMusic.play();
@@ -366,7 +366,7 @@ $('#contentBox').on("click", "#btnStartOver",function(){
 					$('#contentBox').append('<p class ="resultText">Click Below to try again</p>');
 
 
-					$('#contentBox').append('<button id = "btnStartOver">New Game</button>')
+					$('#contentBox').append('<button id = "btnStartOver"></button>')
 					$('body').css({'background':'url("assets/images/creditsBackDropBlurred.jpg")no-repeat center left fixed','background-repeat':'no-repeat','background-size':'100% 100%'});
 					
 					defeatMusic.play();
